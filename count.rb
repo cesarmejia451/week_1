@@ -7,7 +7,17 @@
 # end
 
 # # if anwswer ! = 5 (not equal to five)
-# # if result 
+# # if result != true (not equal to true)
+# # if unless result == true (unless is equal to true)
+#unless result
+#   puts "Hello" (undefined variable)
+#end
+
+#result = nil
+#unless result
+# puts "Hello!" (prints "Hello" because both Nil and False are not True)
+#end
+
 
 # sam_recipes = ["pizza", "hotdog", "crepes", "burgers", "beer", "carrots", "soup", "ribs", "salad", "pasta", "cookies", "cake"]
 # sally_languages = ["spanish", "english", "french", "jive", "sign", "japanese"]
