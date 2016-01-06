@@ -19,11 +19,12 @@ accounts = []
   acct_num = Array.new(10){rand(0..9)}.join("")
 
   accounts << {
-               first_name: first_name
-               last_name: last_name
-               email: email
+               first_name: first_name,
+               last_name: last_name,
+               email: email,
                acct_num: acct_num
               }
+  end
   
 end
 
@@ -34,7 +35,7 @@ puts ""
 puts " Report ".center(50, " ")
 puts Array.new(50){"*"}.join
 
-acounts.each do |account|
+accounts.each do |account|
 
   puts "FIRST NAME: #{ account[:first_name] }"
   puts ""
@@ -54,5 +55,3 @@ acounts.each do |account|
 
 end
 
-puts ""
-puts Array.new(50){"*"}.join
