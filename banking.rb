@@ -55,3 +55,28 @@ accounts.each do |account|
 
 end
 
+puts "Would you like to look up your account information? (y/n)"
+answer = gets.chomp
+
+answer_loop = true
+while answer_loop
+
+  if answer == "y"
+    puts "Please enter your 10-digit account number:"
+    user_acct = gets.chomp
+
+    accounts.each do |account|
+      if user_acct == account[:acct_num].to_s
+        p account
+      end
+    end
+    
+    answer_loop = false
+  
+  elsif answer == "n"
+    puts "Goodbye!"
+    answer_loop = false
+  else 
+    puts "Please enter either 'y' or 'n'"
+  end
+end
