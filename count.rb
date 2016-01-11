@@ -1,10 +1,30 @@
-# counter = 0
+counter = 0
+
+while counter <= 10
+  puts counter
+  counter += 1
+end
 
 
-# while counter <= 10
-#   puts counter
-#   counter += 1
-# end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # # if anwswer ! = 5 (not equal to five)
 # # if result != true (not equal to true)
